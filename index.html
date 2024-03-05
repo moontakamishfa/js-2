@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JS/JQ</title>
+    <!--css links-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/media.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-icons.css">
+
+  </head>
+  <body>
+  	
+    <div class="container">
+
+      <!-- var -->
+      <h2 class="text-danger">The var </h2>
+      <button class="btn btn-dark" onclick="varUse()">Output</button>
+      <p id="var"></p>
+      <hr>
+
+      <!-- const -->
+      <h2 class="text-danger">The const </h2>
+      <button class="btn btn-dark" onclick="constUse()">Output</button>
+      <p id="const"></p>
+      <hr>
+
+      <!-- division -->
+      <h2 class="text-danger">The division </h2>
+      <button class="btn btn-dark" onclick="divUse()">Output</button>
+      <p id="div"></p>
+      <hr>
+
+      <!-- subtraction -->
+      <h2 class="text-danger">The subtraction </h2>
+      <button class="btn btn-dark" onclick="subUse()">Output</button>
+      <p id="sub"></p>
+      <hr>
+
+      <!-- multiplication -->
+      <h2 class="text-danger">The multiplication  </h2>
+      <button class="btn btn-dark" onclick="mulUse()">Output</button>
+      <p id="mul"></p>
+      <hr>
+
+      <!-- increment -->
+      <h2 class="text-danger">The increment </h2>
+      <button class="btn btn-dark" onclick="incUse()">Output</button>
+      <p id="inc"></p>
+      <hr>
+
+      <!-- decrement -->
+      <h2 class="text-danger">The decrement  </h2>
+      <button class="btn btn-dark" onclick="decUse()">Output</button>
+      <p id="dec"></p>
+      <hr>
+
+      <!-- += -->
+      <h2 class="text-danger">The += operation  </h2>
+      <button class="btn btn-dark" onclick="plusEqual()">Output</button>
+      <p id="p_e"></p>
+      <hr>
+
+      <!-- -= -->
+      <h2 class="text-danger">The -= operation  </h2>
+      <button class="btn btn-dark" onclick="minusEqual()">Output</button>
+      <p id="m_e"></p>
+      <hr>
+
+      <!-- *= -->
+      <h2 class="text-danger">The *= operation  </h2>
+      <button class="btn btn-dark" onclick="mulEqual()">Output</button>
+      <p id="mu_e"></p>
+      <hr>
+
+      <!-- /= -->
+      <h2 class="text-danger">The /= operation  </h2>
+      <button class="btn btn-dark" onclick="divEqual()">Output</button>
+      <p id="d_e"></p>
+      <hr>
+
+      <!-- exponentiation -->
+      <h2 class="text-danger">The exponentiation </h2>
+      <button class="btn btn-dark" onclick="exUse()">Output</button>
+      <p id="exp"></p>
+      <hr>
+
+      <!-- left shift -->
+      <h2 class="text-danger">The left shift</h2>
+      <button class="btn btn-dark" onclick="leftShift()">Output</button>
+      <p id="ls"></p>
+      <hr>
+
+      <!-- right shift -->
+      <h2 class="text-danger">The right shift</h2>
+      <button class="btn btn-dark" onclick="rightShift()">Output</button>
+      <p id="rs"></p>
+      <hr>
+
+      <!-- AND -->
+      <h2 class="text-danger">The AND</h2>
+      <button class="btn btn-dark" onclick="And()">Output</button>
+      <p id="and"></p>
+      <hr>
+
+      <!-- OR -->
+      <h2 class="text-danger">The OR</h2>
+      <button class="btn btn-dark" onclick="Or()">Output</button>
+      <p id="or"></p>
+      <hr>
+
+      <!-- Logical AND -->
+      <h2 class="text-danger">The logical AND</h2>
+      <button class="btn btn-dark" onclick="logicAnd()">Output</button>
+      <p id="lg_and"></p>
+      <hr>
+
+      <!-- Logical OR -->
+      <h2 class="text-danger">The logical OR</h2>
+      <button class="btn btn-dark" onclick="logicOr()">Output</button>
+      <p id="lg_or"></p>
+      <hr>
+
+      <!-- double queote -->
+      <h2 class="text-danger">The double queote</h2>
+      <button class="btn btn-dark" onclick="queote()">Output</button>
+      <p>The string is:</p>
+      <p id="dq"></p>
+      <hr>
+
+      <!-- substring -->
+      <h2 class="text-danger">The substring method</h2>
+      <button class="btn btn-dark" onclick="substr()">Output</button>
+      <p>The substring part of the string is:</p>
+      <p id="subs_str"></p>
+      <hr>
+
+
+      <!-- property access[] -->
+      <h2 class="text-danger">The property access</h2>
+      <button class="btn btn-dark" onclick="property()">Check out the property</button>
+      <p id="pro"></p>
+      <hr>
+
+      <!-- slice -->
+      <h2 class="text-danger">The slice method</h2>
+      <button class="btn btn-dark" onclick="slice()">Output</button>
+      <p>The sliced (extracted) part of the string is:</p>
+      <p id="slice"></p>
+      <hr>
+
+      <!-- double click -->
+      <h2 class="text-danger">Check Double Click event</h2>
+      <button class="btn btn-dark" ondblclick="dblOut()">Output</button>
+      <p id="dbl_out">See the output</p>
+      <hr>
+
+      <!-- focus -->
+      <h2 class="text-danger">Check the Focus Event</h2>
+      <input type="text" onfocus="focusOut()"></input>
+      <p id="fc_out">See the output</p>
+      <hr>
+
+      <!-- mouseover -->
+      <h2 class="text-danger">Check Mouseover event</h2>
+      <button class="btn btn-dark" onmouseover="overOut()">Output</button>
+      <p id="over_out">See the output</p>
+      <hr>
+
+      <!-- onscroll -->
+      <h2 class="text-danger">Check Onscroll event</h2>
+      <button class="btn btn-dark" onscroll="scrollOut()">Output</button>
+      <p id="scr_out">See the output</p>
+      <hr>
+
+      <!-- onkeydown -->
+      <h2 class="text-danger">Check the keydown</h2>
+      <input type="text" onkeydown="downOut()"></input>
+      <p id="key_out">See the output</p>
+      <hr>
+
+      <!-- alert -->
+      <h2 class="text-danger">Click the button to see the output alert box</h2>
+      <button class="btn btn-dark" onclick="alertOut()">Output</button>
+      <p id="al_out">See the output</p>
+      <hr>
+
+
+      <!-- console log -->
+      <h2 class="text-danger">Click the button to see the output in console log</h2>
+      <button class="btn btn-dark" onclick="consoleOut()">Output</button>
+      <p id="cl_out">See the output</p>
+      <hr>
+
+      <!-- split -->
+      <h2 class="text-danger">Click the button to split the text</h2>
+      <button class="btn btn-dark" onclick="textSplit()">Split</button>
+      <p id="s_t">See the new text</p>
+      <hr>
+      
+      <!--upper case-->
+      <h2 class="text-danger">Click the button to change the text in uppercase</h2>
+      <button class="btn btn-dark" onclick="textUpper()">Uppercase</button>
+      <p id="u_t">See the new text</p>
+      <hr>
+
+      <!-- lower case -->
+      <h2 class="text-danger">Click the button to change the text in lowercase</h2>
+      <button class="btn btn-dark" onclick="textLower()">Lowercase</button>
+      <p id="l_t">See the new text</p>
+      <hr>
+
+      <!-- text break with backlash -->
+      <h2 class="text-danger">Click the button to change the text with backlash</h2>
+      <button class="btn btn-dark" onclick="textBreak()">Text Break With Backlash</button>
+      <p id="br_t">New text</p>
+      <hr>
+      
+
+      <!-- function with argument -->
+      <h2 class="text-danger">Click the button to call a function with argument</h2>
+      <button class="btn btn-dark" onclick="myFunction('Sakib','player')">The Function</button> 
+      <p id="f_a">Do you know him?</p>
+      <hr>
+
+      <!-- % operator -->
+      <h2 class="text-danger">Click the button to see the remainder</h2>
+      <button class="btn btn-dark" onclick="remainder()">The Remainder</button> 
+      <h3 id="rem">Value</h3>      
+      <hr>
+
+      <!-- font size -->
+      <h2 class="text-danger">Click the button to change the font size</h2>
+      <button class="btn btn-dark" onclick="fontChange()">Change Font Size</button> 
+      <p id="f_c">Lorem, ipsum dolor sit amet.</p>        
+      <hr>
+
+      <!-- change background -->
+      <h2 class="text-danger">Click the button to change the bg color</h2>
+      <button id="bg_chng" class="btn btn-dark" onclick="bgChange()">Change Bg-Color</button>         
+      <hr>
+
+      <!-- text add -->
+      <h2 class="text-danger">Click the button to add text</h2>
+
+      <button class="btn btn-dark" onclick="textAdd()">Text Add</button>
+      <p id="add">Added text</p>
+      <hr>
+
+      <!-- text add with space -->
+      <h2 class="text-danger">Click the button to change the text with space</h2>
+
+      <button class="btn btn-dark" onclick="textAddSpace()">Text Add With Space</button>
+      <p id="add_s">Added text</p>
+      <hr>
+
+      <!-- text and number add-->
+      <h2 class="text-danger">Click the button to text and number</h2>
+
+      <button class="btn btn-dark" onclick="textAddNum()">Text and Number</button>
+      <p id="add_tn">Added text and number</p>
+      <hr>
+
+      <!-- index -->
+      <h3>The position of the first occurrence of "locate" is:</h3>
+      <button class="btn btn-dark" onclick="wordIndex()">Check the Index</button>
+      <p id="ind">Please locate where 'locate' occurs!</p>
+      <hr>
+
+      <!-- get elements by tag name-->
+      <h2 class="text-danger">Click the button to change the text</h2>
+
+      <button class="btn btn-dark" onclick="textChangeTag()">Text Change</button>
+
+      <h3 id="t_c">Lorem ipsum, dolor.</h3>
+      <h3 id="t_c">Lorem ipsum, dolor.</h3>
+      <h3 id="t_c">Lorem ipsum, dolor.</h3>
+      <hr>
+
+      <!-- text change getelements by class name -->
+      <h2 class="text-danger">Click the button to change the text</h2>
+
+      <button class="btn btn-dark" onclick="textChangeClass()">Text Change</button>
+
+      <h3 id="t_c" class="t_c">Lorem ipsum, dolor.</h3>
+      <h3 id="t_c" class="t_c">Lorem ipsum, dolor.</h3>
+      <h3 id="t_c" class="t_c">Lorem ipsum, dolor.</h3>
+      <hr>
+
+      <!-- variable -->
+      <h2 class="text-danger">Click the button to calculate the data</h2>
+      <button class="btn btn-dark" onclick="calculation()">Calculation</button>
+      <h3 id="value">Value</h3>
+      <hr>
+
+
+      <!-- show/hide -->
+       <h2 class="text-danger">Click the button to show/hide the element</h2>
+      <button class="btn btn-dark" onclick="textShow()">Show</button>
+      <button class="btn btn-dark" onclick="textHide()">Hide</button>
+      <h3 id="text">Lorem ipsum dolor sit.</h3>
+      <hr>
+
+      <!-- color change -->
+      <h2 class="text-danger">Click the button to change the color</h2>
+      <button class="btn btn-dark" onmouseover="colorChange()">Change Color</button>
+      <h3 id="c_c">Lorem ipsum dolor sit.</h3>
+      <hr>
+
+      <!-- bulb on/off -->
+      <h2 class="text-danger">Click the button to on/off the bulb</h2>
+
+      <button class="btn btn-dark" onclick="bulbOn()">Bulb On</button>
+      <button class="btn btn-dark" onclick="bulbOff()">Bulb Off</button>
+
+      <img id="bulb" src="images/off.gif">
+      <hr>
+
+      <!-- show date -->
+      <h2 class="text-danger">Click the button to show the date</h2>
+
+      <button class="btn btn-dark" onclick="showDate()">Show date</button>
+      <h3 id="s_d">Show date</h3>
+
+      <hr>
+      <!-- text change -->
+      <h2 class="text-danger">Click the button to change the text</h2>
+
+      <button class="btn btn-dark" onclick="textChange()">Text Change</button>
+
+      <h3 id="t_c">Lorem ipsum, dolor.</h3>
+      <hr>
+
+      <!-- ontoggle -->
+      <details ontoggle="toggle()">
+      <summary>Copyright 1999-2014.</summary>
+      <p> - by Refsnes Data. All Rights Reserved.</p>
+      <hr>
+
+
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
